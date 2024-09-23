@@ -22,6 +22,12 @@ document.getElementById('btn-noakhali').addEventListener('click', function(){
     const inputNoakhaliNumber = parseFloat(inputNoakhali);
     const donateNoakhali = getInnerText('donate-noakhali');
     const donateNoakhaliNumber = parseFloat(donateNoakhali);
+
+    if(isNaN(inputNoakhali) || inputNoakhali <= 0){
+        return alert('Invalid Input!')
+    }
+
+
     const sum = inputNoakhaliNumber + donateNoakhaliNumber ;
     document.getElementById('donate-noakhali').innerText = sum ;
     document.getElementById('input-noakhali').value='' ;
@@ -30,9 +36,7 @@ document.getElementById('btn-noakhali').addEventListener('click', function(){
     const myBalanceRemaining = myBalanceNumber - inputNoakhaliNumber;
     document.getElementById('my-balance').innerText = myBalanceRemaining ;
 
-    if(isNaN(inputNoakhali) || inputNoakhali <= 0){
-        return alert('Invalid Input!')
-    }
+   
     
     const history = document.createElement('div');
     history.className = "border-2 border-gray-100 rounded-xl h-32 container m-auto flex justify-center flex-col items-start gap-4 pl-10 my-10" ;
@@ -42,6 +46,9 @@ document.getElementById('btn-noakhali').addEventListener('click', function(){
     `
     const historyContainer = document.getElementById('history-list');
     historyContainer.insertBefore(history, historyContainer.firstChild)
+
+    const btnNoakhali = document.getElementById('btn-noakhali');
+    btnNoakhali = modalFunction();
 
     // alert("You have donate successfully.");
     
@@ -53,6 +60,11 @@ document.getElementById('btn-feni').addEventListener('click', function(){
     const inputFeniNumber = parseFloat(inputFeni);
     const donateFeni = getInnerText('donate-feni');
     const donateFeniNumber = parseFloat(donateFeni);
+
+    if(isNaN(inputFeni) || inputFeni <= 0){
+        return alert('Invalid Input!')
+    }
+
     const sum = inputFeniNumber + donateFeniNumber ;
     document.getElementById('donate-feni').innerText = sum ;
     document.getElementById('input-feni').value='' ;
@@ -60,10 +72,6 @@ document.getElementById('btn-feni').addEventListener('click', function(){
     const myBalanceNumber = parseFloat(myBalance);
     const myBalanceRemaining = myBalanceNumber - inputFeniNumber;
     document.getElementById('my-balance').innerText = myBalanceRemaining ;
-
-    if(isNaN(inputFeni) || inputFeni <= 0){
-        return alert('Invalid Input!')
-    }
 
     const history = document.createElement('div');
     history.className = "border-2 border-gray-100 rounded-xl h-32 container m-auto flex justify-center flex-col items-start gap-4 pl-10 my-10" ;
@@ -73,6 +81,9 @@ document.getElementById('btn-feni').addEventListener('click', function(){
     `
     const historyContainer = document.getElementById('history-list');
     historyContainer.insertBefore(history, historyContainer.firstChild)
+
+    const btnFeni = document.getElementById('btn-feni');
+    btnFeni = modalFunction();
 
     // alert("You have donate successfully.");
     
@@ -85,6 +96,11 @@ document.getElementById('btn-quota').addEventListener('click', function(){
     const inputQuotaNumber = parseFloat(inputQuota);
     const donateQuota = getInnerText('donate-quota');
     const donateQuotaNumber = parseFloat(donateQuota);
+
+    if(isNaN(inputQuota) || inputQuota <= 0){
+        return alert('Invalid Input!')
+    }
+
     const sum = inputQuotaNumber + donateQuotaNumber ;
     document.getElementById('donate-quota').innerText = sum ;
     document.getElementById('input-quota').value='' ;
@@ -93,9 +109,7 @@ document.getElementById('btn-quota').addEventListener('click', function(){
     const myBalanceRemaining = myBalanceNumber - inputQuotaNumber;
     document.getElementById('my-balance').innerText = myBalanceRemaining ;
 
-    if(isNaN(inputQuota) || inputQuota <= 0){
-        return alert('Invalid Input!')
-    }
+    
 
     const history = document.createElement('div');
     history.className = "border-2 border-gray-100 rounded-xl h-32 container m-auto flex justify-center flex-col items-start gap-4 pl-10 my-10" ;
@@ -105,6 +119,9 @@ document.getElementById('btn-quota').addEventListener('click', function(){
     `
     const historyContainer = document.getElementById('history-list');
     historyContainer.insertBefore(history, historyContainer.firstChild)
+
+    const btnQuota = document.getElementById('btn-quota');
+    btnQuota = modalFunction();
 
     // alert("You have donate successfully.");
     
