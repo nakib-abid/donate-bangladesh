@@ -43,8 +43,8 @@
 
       <!-- donation history button start -->
       <div class="pt-12 pb-4 container m-auto flex justify-center">
-        <button class="btn btn-outline bg-lime-400 px-10">Donation</button> &nbsp;
-        &nbsp;
+        <button class="btn btn-outline bg-lime-400 px-10">Donation</button>
+        &nbsp; &nbsp;
         <button class="btn btn-outline px-10">History</button>
       </div>
       <!-- donation history button end -->
@@ -60,8 +60,8 @@
           <div><img src="./img/noakhali.png" alt="" /></div>
           <div>
             <button class="btn">
-              <span><img src="./img/coin.png" alt="" /></span><span>0</span
-              ><span>BDT</span>
+              <span><img src="./img/coin.png" alt="" /></span
+              ><span id="donate-noakhali">100</span><span>BDT</span>
             </button>
             <h4 class="my-5 text-xl font-bold">
               Donate for Flood at Noakhali, Bangladesh
@@ -76,14 +76,37 @@
               a positive impact on the lives of those in need.
             </p>
             <input
-            id="input-noakhali"
+              id="input-noakhali"
               type="text"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full my-5"
             />
-            <button id="btn-noakhali" class="btn w-full bg-lime-400 text-xl font-bold mt-3">
+            <button
+            
+              id="btn-noakhali"
+              class="btn w-full bg-lime-400 text-xl font-bold mt-3"
+            >
               Donate Now
             </button>
+            
+              <!-- open modal -->
+            
+            <dialog id="myModal" class="modal">
+              <div class="modal-box">
+                <h3 class="text-4xl font-bold text-center">Congrates!</h3>
+                <img class="ml-52 mt-6 h-10 w-10" src="./img/coin.png" alt="">
+                <p class="py-4 ml-24">
+                  You Have Donated For Humankind
+                </p>
+                <p class="text-xl font-extrabold ml-40">Successfully</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn mr-36">Close Confirmation</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
           </div>
         </div>
       </div>
@@ -94,21 +117,29 @@
           <div><img src="./img/feni.png" alt="" /></div>
           <div>
             <button class="btn">
-              <span><img src="./img/coin.png" alt="" /></span><span>0</span
+              <span><img src="./img/coin.png" alt="" /></span><span id="donate-feni">100</span
               ><span>BDT</span>
             </button>
             <h4 class="my-5 text-xl font-bold">
-                Donate for Flood Relief in Feni,Bangladesh
+              Donate for Flood Relief in Feni,Bangladesh
             </h4>
             <p class="my-5">
-                The recent floods in Feni have devastated local communities, leading to severe disruption and loss. <br> Your generous donation will help provide immediate aid, including food, clean water, <br> and medical supplies, to those affected by this calamity. <br> Together, we can offer crucial support and  help rebuild lives  in the aftermath of this disaster. Every contribution counts <br> towards making a real difference. Please consider donating today to assist those in urgent need.
+              The recent floods in Feni have devastated local communities,
+              leading to severe disruption and loss. <br />
+              Your generous donation will help provide immediate aid, including
+              food, clean water, <br />
+              and medical supplies, to those affected by this calamity. <br />
+              Together, we can offer crucial support and help rebuild lives in
+              the aftermath of this disaster. Every contribution counts <br />
+              towards making a real difference. Please consider donating today
+              to assist those in urgent need.
             </p>
-            <input
+            <input id="input-feni"
               type="text"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full my-5"
             />
-            <button class="btn w-full bg-lime-400 text-xl font-bold mt-3">
+            <button id="btn-feni" class="btn w-full bg-lime-400 text-xl font-bold mt-3">
               Donate Now
             </button>
           </div>
@@ -125,24 +156,36 @@
               ><span>BDT</span>
             </button>
             <h4 class="my-5 text-xl font-bold">
-                Aid for Injured in the Quota Movementh
+              Aid for Injured in the Quota Movementh
             </h4>
             <p class="my-5">
-                The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. <br> Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. <br> By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. <br> Every donation plays a vital role in alleviating their suffering and aiding in their recovery. <br> Please consider making a donation to support these brave individuals in their time of need.
+              The recent Quota movement has resulted in numerous injuries and
+              significant hardship for many individuals. <br />
+              Your support is crucial in providing medical assistance,
+              rehabilitation, and necessary supplies to those affected. <br />
+              By contributing, you help ensure that injured individuals receive
+              the care and support they need during this challenging time.
+              <br />
+              Every donation plays a vital role in alleviating their suffering
+              and aiding in their recovery. <br />
+              Please consider making a donation to support these brave
+              individuals in their time of need.
             </p>
             <input
               type="text"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full my-5"
             />
-            <button class="btn w-full bg-lime-400 text-xl font-bold mt-3">
+            <button id="btn-quota" class="btn w-full bg-lime-400 text-xl font-bold mt-3">
               Donate Now
             </button>
           </div>
         </div>
       </div>
 
-      <div class="hidden container m-auto flex justify-center my-10"> history </div>
+      <div class="hidden container m-auto flex justify-center my-10">
+        history
+      </div>
     </main>
 
     <footer class="h-36 bg-orange-50"></footer>
