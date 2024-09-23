@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <nav class="pt-6 pb-10 bg-orange-50">
+            <div class="navbar container m-auto">
+              <div class="navbar-start">
+                <div class="navbar-end">
+                  <a id="btn-home" class="btn bg-lime-400 px-10 font-extrabold text-xl">Home</a>
+                </div>
+              </div>
+              <div class="navbar-center hidden lg:flex gap-4">
+                <img src="./img/logo.png" alt="" />
+                <p class="font-bold text-xl">Donate Bangladesh</p>
+              </div>
+    
+              <p class="text-xl navbar-end">
+                <span><img src="./img/coin.png" alt="" /></span>
+                &nbsp;<span>10000</span>&nbsp; <span>BDT</span>
+              </p>
+            </div>
+          </nav>
+    </header>
+    <main class="my-8 container flex justify-start flex-col m-auto">
+
+        <h1 class="text-5xl font-bold">Important FAQ ?</h1>
+        <!-- FAQ part -->
+
+        <div class="collapse collapse-arrow bg-base-200 mt-5">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface that represents the structure of an HTML document as a tree of objects, allowing developers to interact with and manipulate the content, structure, and style of web pages. It enables dynamic changes to the document through JavaScript, allowing for features like updates, animations, and event handling.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 mt-5">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>To select an element from the DOM, I can use methods like document.getElementById('elementId') for single elements by ID, or document.querySelector('selector') for selecting using CSS selectors. I can also use document.getElementsByClassName('className') to get a live HTMLCollection of elements with a specific class name. For selecting multiple elements, document.querySelectorAll('selector') returns a static NodeList of matching elements.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 mt-5">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a technique in the DOM where a single event listener is added to a parent element instead of individual listeners on each child element. This allows events triggered by child elements to be handled by the parent, improving performance and reducing memory usage.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 mt-5">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>To manipulate an element's attributes in the DOM, use getAttribute and setAttribute methods to read and update attributes, respectively. For styles, directly modify the style property of the element to change CSS styles. We can access elements using methods like getElementById or querySelector.</p>
+            </div>
+          </div>
+
+    </main>
+
+    <script>
+        document.getElementById('btn-home').addEventListener('click', function(){
+    window.location.href = './index.html';
+})
+    </script>
+    
+</body>
+</html>

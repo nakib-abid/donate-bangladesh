@@ -41,7 +41,7 @@ document.getElementById('btn-noakhali').addEventListener('click', function(){
     const history = document.createElement('div');
     history.className = "border-2 border-gray-100 rounded-xl h-32 container m-auto flex justify-center flex-col items-start gap-4 pl-10 my-10" ;
     history.innerHTML = `
-    <p> ${inputNoakhaliNumber} Taka is Donated for Flood Relief in Noakhali</p>
+    <p> ${inputNoakhaliNumber} Taka is Donated for Flood Relief in Noakhali, Bangladesh</p>
     <p>Date: ${new Date()}</p>
     `
     const historyContainer = document.getElementById('history-list');
@@ -76,7 +76,7 @@ document.getElementById('btn-feni').addEventListener('click', function(){
     const history = document.createElement('div');
     history.className = "border-2 border-gray-100 rounded-xl h-32 container m-auto flex justify-center flex-col items-start gap-4 pl-10 my-10" ;
     history.innerHTML = `
-    <p> ${inputFeniNumber} Taka is Donated for Flood Relief in Feni</p>
+    <p> ${inputFeniNumber} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
     <p>Date: ${new Date()}</p>
     `
     const historyContainer = document.getElementById('history-list');
@@ -114,7 +114,7 @@ document.getElementById('btn-quota').addEventListener('click', function(){
     const history = document.createElement('div');
     history.className = "border-2 border-gray-100 rounded-xl h-32 container m-auto flex justify-center flex-col items-start gap-4 pl-10 my-10" ;
     history.innerHTML = `
-    <p> ${inputQuotaNumber} Taka is donated for Injured in the Quota Movement</p>
+    <p> ${inputQuotaNumber} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
     <p>Date: ${new Date()}</p>
     `
     const historyContainer = document.getElementById('history-list');
@@ -142,5 +142,13 @@ document.getElementById('btn-donation').addEventListener('click', function(){
     document.getElementById('btn-history').classList.remove('bg-lime-400');
     document.getElementById('btn-donation').classList.add('bg-lime-400');
 })
+
+
+// blog button
+document.getElementById('btn-blog').addEventListener('click', function(){
+    window.location.href = './blog.html';
+})
+
+// home button
 
 
